@@ -12,5 +12,5 @@
     credentials: "include",
   });
   res2 = await res2.json();
-  console.log({ accessRes: res });
+  console.log({ accessRes: res2 });
 })();
