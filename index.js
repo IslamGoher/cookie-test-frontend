@@ -11,11 +11,12 @@ accessButton.addEventListener("click", async () => {
     const res = await access();
     if (res.message.includes("success")) {
       headerAccess.innerHTML = "success";
-      headerAccess.style.color = 'green';
+      headerAccess.style.color = 'LimeGreen';
     }
-    else
+    else {
       headerAccess.innerHTML = "unauthorized";
       headerAccess.style.color = 'red';
+    }
   } catch (error) {
     headerAccess.innerHTML = "unauthorized";
     headerAccess.style.color = 'red';
